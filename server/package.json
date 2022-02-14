@@ -1,0 +1,26 @@
+{
+  "name": "starwars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client npm start && npm run build --prefix client"
+  },
+  "author": "Deltacron",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.1",
+    "node-fetch": "^3.2.0",
+    "request": "^2.88.2",
+    "swapi-node": "^0.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
